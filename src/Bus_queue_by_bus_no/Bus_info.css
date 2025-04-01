@@ -1,0 +1,50 @@
+.inner-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 50rem;
+}
+
+.img_div img{
+    height: 2rem;
+    width: 2rem;
+    padding-left: 4rem;
+
+}
+
+.origin{
+    display: flex;
+    align-items: center;
+}
+
+.origin_text{
+    padding-left: 0.50rem;
+}
+
+.bus_queue_box{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: -6rem;
+}
+
+.button_text{
+    display: flex;
+    width: 100vh;
+    justify-content: space-between;
+}
+
+.arrow_icon{
+    display: flex;
+    padding-left: 8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+.time{
+    display: flex;
+    padding-top: 0.75rem;
+    padding-left: 4.5rem;
+}
+

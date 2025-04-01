@@ -1,0 +1,16 @@
+.smart-businout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.ant-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 12rem;
+    box-shadow: black;
+}

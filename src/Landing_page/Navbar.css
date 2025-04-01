@@ -1,0 +1,21 @@
+.smart-navbar{
+    display: flex;
+    height: 7rem;
+    background-color: rgb(189, 198, 233);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    margin: 1rem 0.5rem 0rem 0.5rem;
+}
+.nav-logo img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.inner-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    cursor: pointer;
+}
