@@ -1,0 +1,176 @@
+/* Job Details Form Wrapper */
+.job-details-form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    /* background-color: #121212; Dark background */
+    font-family: 'Inter', sans-serif; /* Google font */
+  }
+  
+  /* Job Details Form Main */
+  .job-details-form-main {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    /* background: #1E1E1E; Dark background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(3, 102, 49, 0.2);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Header with background image */
+  .job-details-form-header {
+    /* background: url('https://media.graphassets.com/resize=fit:crop,width:940,height:485/dboUP210QBqdw7feUAxu') center/cover no-repeat; */
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+  
+  .job-details-form-header h2 {
+    /* color: black; */
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Input Group with Card-like Structure */
+  .job-details-form-input-group {
+    margin-bottom: 25px;
+    /* background-color: #292929; */
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label Style */
+  .job-details-form-label {
+    /* color: #E0E0E0; */
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  /* Input Fields (Text, Email, Select) */
+  .job-details-form-input,
+  .job-details-form-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    /* background-color: #2B2B2B; */
+    /* color: #E0E0E0; */
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .job-details-form-input:focus,
+  .job-details-form-select:focus {
+    border-color: #55ACEE;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Checkbox Group Style */
+  .job-details-form-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .job-details-form-checkbox-item {
+    display: block;
+    width: calc(33.333% - 15px); /* Each skill in a block */
+    margin-bottom: 10px;
+    background-color: #2B2B2B;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .job-details-form-checkbox-item:hover {
+    background-color: #3A3A3A; /* Darken on hover */
+    transform: scale(1.05);
+  }
+  
+  .job-details-form-checkbox-label {
+    font-size: 18px;
+    /* color: #E0E0E0; */
+    display: flex;
+    align-items: center;
+  }
+  
+  .job-details-form-checkbox-item input[type="checkbox"] {
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Checkbox checked state */
+  .job-details-form-checkbox-item input[type="checkbox"]:checked + .checkmark {
+    background-color: #55ACEE; /* Highlight checked items */
+  }
+  
+  /* Dropdown Styles */
+  .job-details-form-select {
+    padding: 14px;
+    background-color: #2B2B2B;
+    /* color: #E0E0E0; */
+    border-radius: 10px;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+  }
+  
+  .job-details-form-select:focus {
+    border-color: #55ACEE;
+  }
+  
+  /* Submit Button */
+  .job-details-form-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #55ACEE;
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-details-form-btn:hover {
+    background-color: #4A99D2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

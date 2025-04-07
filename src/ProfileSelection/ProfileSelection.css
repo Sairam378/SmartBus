@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+} */
+
+/* Container */
+.pco-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  padding: 20px;
+}
+
+/* Welcome Message */
+.pco-welcome-message {
+  text-align: center;
+  animation: pco-fadeIn 2s ease-out;
+}
+
+.pco-welcome-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin: 0;
+  animation: pco-slideInFromTop 1.5s ease-out;
+}
+
+.pco-highlight {
+  color: #ff6f61;
+  font-size: 4rem;
+}
+
+.pco-welcome-subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  color: #cccccc;
+  margin: 10px 0 0 0;
+  animation: pco-fadeIn 1.5s ease-out;
+}
+
+/* Card Row */
+.pco-card-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+/* Card */
+.pco-card {
+  background: rgba(30, 30, 30, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: pco-cardEntrance 1s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pco-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.pco-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  transform: rotate(45deg);
+  transition: all 0.5s ease-out;
+  pointer-events: none;
+}
+
+.pco-card:hover::before {
+  transform: rotate(45deg) translateX(100%);
+}
+
+@keyframes pco-cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Banner Images */
+.pco-banner-image {
+  background-size: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #ff6f61;
+}
+
+.pco-banner-image1 {
+  /* background-image: url(jobseeker.png); */
+}
+
+.pco-banner-image2 {
+  /* background-image: url(employee.png); */
+}
+
+.pco-banner-image3 {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/6024/6024190.png);
+}
+
+/* Card Content */
+.pco-card-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.pco-card-para {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.pco-button-wrapper {
+  margin-top: 20px;
+}
+
+.pco-btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pco-btn + .pco-btn {
+  margin-left: 10px;
+}
+
+.pco-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ff6f61;
+}
+
+.pco-outline:hover {
+  transform: scale(1.05);
+  background: #ff6f61;
+  color: #ffffff;
+}
+
+.pco-fill {
+  background: #ff6f61;
+  color: #ffffff;
+}
+
+.pco-fill:hover {
+  transform: scale(1.05);
+  background: #e05d50;
+}
+
+/* Animations */
+@keyframes pco-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pco-slideInFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

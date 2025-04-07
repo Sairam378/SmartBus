@@ -1,0 +1,121 @@
+/* Recruiter Signup Form Wrapper */
+.recruiter-details-form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    /* background-color: #121212; Dark background */
+    font-family: 'Inter', sans-serif; /* Google font */
+  }
+  
+  /* Recruiter Signup Form Main */
+  .recruiter-details-form-main {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    /* background: #1E1E1E; Dark background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Header with background image */
+  .recruiter-details-form-header {
+    /* background: url('https://media.graphassets.com/resize=fit:crop,width:940,height:485/dboUP210QBqdw7feUAxu') center/cover no-repeat; */
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+  
+  .recruiter-details-form-header h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Input Group with Card-like Structure */
+  .recruiter-details-form-input-group {
+    margin-bottom: 25px;
+    /* background-color: #292929; */
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label Style */
+  .recruiter-details-form-label {
+    /* color: #E0E0E0; */
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  /* Input Fields (Text, Email, Select) */
+  .recruiter-details-form-input,
+  .recruiter-details-form-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    /* background-color: #2B2B2B; */
+    /* color: #E0E0E0; */
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .recruiter-details-form-input:focus,
+  .recruiter-details-form-select:focus {
+    border-color: #55ACEE;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Submit Button */
+  .recruiter-details-form-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #55ACEE;
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .recruiter-details-form-btn:hover {
+    background-color: #4A99D2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

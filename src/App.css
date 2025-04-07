@@ -1,6 +1,8 @@
 body{
   background-image: linear-gradient(45deg, rgb(237, 179, 188),rgb(173, 239, 173));
   text-align: center;
+  /* background-image: url(https://techbreak.com.br/wp-content/uploads/2023/10/bing-image-creator-2-min.jpg); */
+
 }
 
 .App {

@@ -1,0 +1,13 @@
+.footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    /* background-color: black; */
+    color: black
+}
+
+.footer_text-2{
+    width: 25%;
+}

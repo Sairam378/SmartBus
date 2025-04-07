@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+} */
+
+/* Container */
+.lc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #1a1a1a, #2c3e50); */
+}
+
+/* Card */
+.lc-card {
+  /* background: rgba(30, 30, 30, 0.2); */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  animation: lc-cardEntrance 1s ease-out;
+}
+
+.lc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes lc-cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form title */
+.lc-form-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  /* color: #ffffff; */
+  animation: lc-fadeIn 1.5s ease-out;
+}
+
+/* Input containers */
+.lc-input-container {
+  margin-bottom: 1.5rem;
+}
+
+.lc-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  /* color: #ffffff; */
+}
+
+.lc-input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  /* background: #1e1e1e; */
+  /* color: #ffffff; */
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lc-input:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 0 5px #ff6f61;
+}
+
+/* Radio buttons */
+.lc-radio-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.lc-radio-label {
+  font-size: 1.2rem;
+  /* color: #ffffff; */
+  cursor: pointer;
+}
+
+.lc-radio {
+  margin-right: 0.9rem;
+  accent-color: #ff6f61;
+}
+
+/* Button */
+.lc-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: #ff6f61;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.lc-button:hover {
+  background: #e05d50;
+  transform: translateY(-2px);
+}
+
+.lc-button:active {
+  transform: translateY(0);
+}
+
+/* Error and success messages */
+.lc-error {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.lc-success {
+  color: #2ecc71;
+  font-size: 1.2rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Footer links */
+.lc-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.lc-link {
+  color: #ff6f61;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.lc-link:hover {
+  color: #e05d50;
+}
+
+.lc-go-back-btn {
+  margin-top: 1rem;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: #ff6f61;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.lc-go-back-btn:hover {
+  color: #e05d50;
+}
+
+/* Animations */
+@keyframes lc-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

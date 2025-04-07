@@ -14,6 +14,16 @@ const Navbar = ()=>{
             navigator_home('/home')
         }
 
+        const navigator_contact=useNavigate()
+        const onsearch_contact =() =>{
+            navigator_contact('/contact')
+        }
+
+        const navigator_login=useNavigate()
+        const onsearch_login =() =>{
+            navigator_login('/login')
+        }        
+
     return(
 
         <div className="smart-navbar">
@@ -29,15 +39,15 @@ const Navbar = ()=>{
                 <div onClick={onsearch}>
                     About
                 </div>
-                <div>
+                <div onClick={onsearch_contact}>
                     Contact Us
                 </div>
-                <div>
-                    Resigter
+                <div onClick={onsearch_login}>
+                    Resigter/Login
                 </div>
-                <div>
+                {/* <div>
                     Login
-                </div>
+                </div> */}
             </div>
         </div>
             

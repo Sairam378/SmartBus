@@ -1,9 +1,11 @@
-.smart-businout{
+.smart-businout-1{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3rem 0;
+    /* padding-bottom: 3rem;
+    padding-top: 3rem; */
 }
 
 .ant-card-body{
@@ -14,3 +16,9 @@
     height: 12rem;
     box-shadow: black;
 }
+
+/* :where(.css-dev-only-do-not-override-240cud).ant-card .ant-card-head {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} */
